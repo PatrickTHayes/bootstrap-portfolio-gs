@@ -285,7 +285,7 @@ img::-moz-selection {
 .grid-container {
   display: grid;
   grid-template-columns: 48% auto;
-  grid-template-rows: 48vh 48vh 48vh 48vh;
+  grid-template-rows: 48vh 48vh 48vh;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
   padding: 5%;
