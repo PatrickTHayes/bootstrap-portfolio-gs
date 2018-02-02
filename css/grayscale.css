@@ -305,9 +305,14 @@ img::-moz-selection {
   height:100%;
   width:100%;
 }
-#f2p{
+.bright{
+  -webkit-filter: brightness(130%); 
+  filter: brightness(130%);
+}
+#f2p, #GoT, #r2tc{
   opacity: 0.5;
-  background: url("../img/f2p.png") no-repeat center center scroll;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -318,12 +323,29 @@ img::-moz-selection {
   max-width: 100%;
   max-height: 100%;
 }
-#f2p:hover{
+#f2p:hover, #GoT:hover, #r2tc:hover{
   opacity: 1.0;
+  filter:none;
 }
+#f2p{
+  background: url("../img/f2p.png") no-repeat center center scroll;
+}
+#GoT{
+  background: url("../img/GOT-clicky-running.PNG") no-repeat center center scroll;
+}
+#r2tc{
+  background: url("../img/duello.PNG") no-repeat center center scroll;
+
+}
+
 .hideOverflow{
   overflow:hidden;
   text-overflow:ellipsis;
   width:auto;
   display:block;
+  background-color:black;
+  opacity: .5;
+}
+.hideOverflow:hover{
+  
 }
