@@ -300,6 +300,8 @@ img::-moz-selection {
 }
 .img-holder{
   height:48vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
 }
 .link-holder{
   height:100%;
