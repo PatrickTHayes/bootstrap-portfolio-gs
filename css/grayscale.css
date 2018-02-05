@@ -354,3 +354,9 @@ img::-moz-selection {
 .hideOverflow:hover{
   opacity:1.0;
 }
+
+.backgroundLink{
+  display:block;
+  height:100%;
+  width:100%;
+}
