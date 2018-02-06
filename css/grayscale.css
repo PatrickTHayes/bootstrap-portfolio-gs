@@ -284,24 +284,23 @@ img::-moz-selection {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 48% auto;
+  grid-template-columns: 46% auto;
   grid-template-rows: 48vh 48vh 48vh;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
-  padding: 5%;
+  padding: 2px;
 }
 .grid-container > div {
-  
   border: 1px solid black;
   text-align: center;
   align-content:center;
   font-size: 30px;
-  padding: 10%;
 }
 .img-holder{
-  height:48vh;
+  /*height:48vh;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
 }
 .link-holder{
   height:100%;
@@ -350,6 +349,7 @@ img::-moz-selection {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  padding:5%;
 }
 .hideOverflow:hover{
   opacity:1.0;
