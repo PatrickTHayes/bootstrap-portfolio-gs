@@ -285,7 +285,7 @@ img::-moz-selection {
 .grid-container {
   display: grid;
   grid-template-columns: 46% auto;
-  grid-template-rows: 48vh 48vh 48vh;
+  grid-template-rows: 48vh 48vh 48vh 48vh;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
   padding: 2px;
@@ -310,7 +310,7 @@ img::-moz-selection {
   -webkit-filter: brightness(130%); 
   filter: brightness(130%);
 }
-#f2p, #GoT, #r2tc{
+#f2p, #GoT, #r2tc, #amelies{
   opacity: 0.5;
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
@@ -324,7 +324,7 @@ img::-moz-selection {
   max-width: 100%;
   max-height: 100%;
 }
-#f2p:hover, #GoT:hover, #r2tc:hover{
+#f2p:hover, #GoT:hover, #r2tc:hover,#amelies:hover{
   opacity: 1.0;
   filter:none;
 }
@@ -337,6 +337,9 @@ img::-moz-selection {
 #r2tc{
   background: url("../img/duello.PNG") no-repeat center center scroll;
 
+}
+#amelies{
+  background: url("../img/AmeliesMenu.PNG") no-repeat center center scroll;
 }
 
 .hideOverflow{

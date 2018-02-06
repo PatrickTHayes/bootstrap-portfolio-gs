@@ -41,3 +41,16 @@
 
 })(jQuery); // End of use strict
 
+const validate= function(){
+  var x = document.forms["emailForm"]["mail"].value;
+  const validateEmail=(email)=>{
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+  if (!validateEmail(x)) {
+      alert("Please leave a valid email so I can contact you back!");
+      return false;
+  }else{
+    return true
+  }
+}
