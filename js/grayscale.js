@@ -54,3 +54,12 @@ const validate= function(){
     return true
   }
 }
+
+$("#ameliesModal").click(function(){
+  $("#modalTitle").text("Amelies 2.0 Features");
+  $("#modalBody").html("<p>Full-Stack MERN SPA</p> <p>JWT, Bcrypt, and Passport for user Auth </p><p>Menus dynamically created from database </p> <p>Manager can update database</p> <p>Quill, a rich text editor, allowed us to store stylized writing in database </p><p> Sendgrid email api, seemlessly send emails<p>")
+})
+$("#r2tcModal").click(function(){
+  $("#modalTitle").text("Rise to the Challenge Features");
+  $("#modalBody").html("<p> Full-Stack using Node, express, MySql, and express-handlebars</p>  <p>Well modeled, connected collections in database.</p><p> User auth and email usage (sendGrid) </p><p>Materialize (CSS Framework)</p><p>JS technologies - jQuery, AJAX, JSON</p><p>Node packages - bcrypt, bluebird, body-parser, connect-flash, cookie-parser, dotenv, express, handlebars, session, mysql, passport (custom token), path, sendgrid, sequelize</p> <p>Heroku deploy with JawsDB</p><p>Github workflow management</p>")
+})

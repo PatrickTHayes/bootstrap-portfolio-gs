@@ -363,3 +363,11 @@ img::-moz-selection {
   height:100%;
   width:100%;
 }
+
+.features:hover{
+  background-color:#42DCA3;
+}
+
+.modal-content{
+  background-color:black;
+}

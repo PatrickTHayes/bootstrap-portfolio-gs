@@ -104,13 +104,19 @@
               </span>
             </div>
             <div  class ="hideOverflow">
-              <p>This website was a remake of  <a href="http://www.ameliesfrenchbakery.com/" target="_blank" class="btn btn-default btn-sm">Amelies French Bakery website</a> but remade into a SPA in React. Also made menus dynamically created from a database which a manager can modify. Strongly recommend visiting both web pages and comparing them.
+              <p>This website was a remake of  <a href="http://www.ameliesfrenchbakery.com/" target="_blank" class="btn btn-default btn-sm">Amelies French Bakery website</a> but remade into a SPA in React. Also made menus dynamically created from a database which a manager can modify. I Strongly recommend visiting both web pages and comparing them.
               </p>
               <p>
                 <a href="https://lit-spire-91818.herokuapp.com/" target="_blank" class="btn btn-default btn-lg">Visit the running app here. </a>
               </p>
               <p>
                 <a href="https://github.com/katieatwell/amelieswebsite" target="_blank" class="btn btn-default btn-lg">Visit the source code here.</a>
+              </p>
+              <p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" id="ameliesModal">
+                  Features
+                </button>
               </p>
             </div>
             <div class="img-holder" id="r2tc">
@@ -119,13 +125,19 @@
               </span>
             </div>
             <div  class ="hideOverflow">
-              <p>The core functionality of the app is to provide a platform where users are able to create and issue challenges to their friends or strangers. Highlights: well modeled, connected collections. user auth, email usage (sendGrid), and examplary <a href="https://docs.google.com/document/d/1FjRBmBWHrQYBZqJk0PMZFQVDwoApTuZaWYPN7hFRYfQ/edit#" target="_blank" class="btn btn-default btn-sm">group documentation</a>
+              <p>The core functionality of the app is to provide a platform where users are able to create and issue challenges to their friends or strangers as well as review challenges being done. Check out the examplary <a href="https://docs.google.com/document/d/1FjRBmBWHrQYBZqJk0PMZFQVDwoApTuZaWYPN7hFRYfQ/edit#" target="_blank" class="btn btn-default btn-sm">group documentation</a>
               </p>
               <p>
                 <a href="https://desolate-crag-26628.herokuapp.com/" target="_blank" class="btn btn-default btn-lg">Visit the running app here. </a>
               </p>
               <p>
                 <a href="https://github.com/PatrickTHayes/Rise-to-the-Challenge" target="_blank" class="btn btn-default btn-lg">Visit the source code here.</a>
+              </p>
+              <p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" id="r2tcModal">
+                  Features
+                </button>
               </p>
             </div>
             <div class="img-holder" id="f2p">
@@ -212,6 +224,27 @@
         </div>
       </div>
     </section>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -221,8 +254,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
