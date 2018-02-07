@@ -278,11 +278,17 @@ img::-moz-selection {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 46% auto;
-  grid-template-rows: auto 72vh 72vh 72vh;
+  grid-template-columns: auto 400px;
+  grid-template-rows: auto auto auto auto;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
   padding: 2px;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
 }
 .grid-container > div {
   border: 1px solid black;
@@ -293,10 +299,11 @@ img::-moz-selection {
 .grid-header {
   grid-column-start: 1;
   grid-column-end: 3;
-  opacity: 0.5;
-  background:black;
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
+}
+.grid-header, .grid-subH {
+  
+  
+  
 }
 .img-holder{
   /*height:48vh;*/
@@ -312,8 +319,7 @@ img::-moz-selection {
   -webkit-filter: brightness(130%); 
   filter: brightness(130%);
 }
-#f2p, #GoT, #r2tc, #amelies{
-  opacity: 0.5;
+#f2p, #GoT, #r2tc, #amelies, .grid-subH, .grid-header{
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
   background-color: black;
@@ -325,9 +331,10 @@ img::-moz-selection {
   height: auto;
   max-width: 100%;
   max-height: 100%;
+  opacity: 0.9;
 }
 
-.img-holder#f2p:hover, .img-holder#GoT:hover, .img-holder#r2tc:hover, .img-holder#amelies:hover, .grid-header:hover{
+.img-holder#f2p:hover, .img-holder#GoT:hover, .img-holder#r2tc:hover, .img-holder#amelies:hover, .grid-container:hover, .grid-subH:hover, .grid-header:hover{
   opacity: 1.0 ;
   filter:grayscale(0%) ;
   -webkit-filter:grayscale(0%);
