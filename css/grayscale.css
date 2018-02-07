@@ -184,9 +184,9 @@ a:focus, a:hover {
   padding-bottom: 150px;
 }
 
-.download-section {
+.project-section {
   color: white;
-  background: url("../img/footballgs.jpg") no-repeat center center scroll;
+  /*background: url("../img/footballgs.jpg") no-repeat center center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -324,22 +324,28 @@ img::-moz-selection {
   max-width: 100%;
   max-height: 100%;
 }
-#f2p:hover, #GoT:hover, #r2tc:hover,#amelies:hover{
-  opacity: 1.0;
-  filter:none;
+
+.img-holder#f2p:hover, .img-holder#GoT:hover, .img-holder#r2tc:hover, .img-holder#amelies:hover{
+  opacity: 1.0 ;
+  filter:grayscale(0%) ;
+  -webkit-filter:grayscale(0%);
 }
 #f2p{
   background: url("../img/f2p.png") no-repeat center center scroll;
+  background-size:cover;
 }
 #GoT{
   background: url("../img/GOT-clicky-running.PNG") no-repeat center center scroll;
+  background-size:cover;
 }
 #r2tc{
   background: url("../img/duello.PNG") no-repeat center center scroll;
+  background-size:cover;
 
 }
 #amelies{
   background: url("../img/AmeliesMenu.PNG") no-repeat center center scroll;
+  background-size:cover;
 }
 
 .hideOverflow{
@@ -370,4 +376,51 @@ img::-moz-selection {
 
 .modal-content{
   background-color:black;
+}
+.bg{
+  position:relative;
+}
+.bg::before{
+  position:absolute;
+  display:block;
+  content:"";
+  height:100%;
+  width:100%;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+.bg:hover::before{
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%);
+}
+.bg1::before{
+  background: url("../img/football2.jpg") no-repeat ;
+  background-size:cover;
+}
+.bg2::before{
+  background: url("../img/football3.jpg") no-repeat center center scroll;
+  background-size:cover;
+}
+.bg3::before{
+  background: url("../img/football4.jpg") no-repeat center center scroll;
+  background-size:cover;
+}
+.bg4::before{
+  background: url("../img/football5.jpg") no-repeat center center scroll;
+  background-size:cover;
+}
+section > div > p {
+  background-color:gray;
+}
+
+.text-on-pictures {
+  background-color:black;
+  opacity:.5;
 }
