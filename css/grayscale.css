@@ -275,7 +275,7 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-
+/*set inactive containers to gray and half opacity, set up css grid*/
 .grid-container {
   display: grid;
   grid-template-columns: auto 400px;
@@ -296,15 +296,12 @@ img::-moz-selection {
   align-content:center;
   font-size: 30px;
 }
-.grid-header {
+/*header takes two columns*/
+.grid-header { 
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.grid-header, .grid-subH {
-  
-  
-  
-}
+
 .img-holder{
   /*height:48vh;*/
   -webkit-transition: all 0.3s ease-in-out;
@@ -319,6 +316,7 @@ img::-moz-selection {
   -webkit-filter: brightness(130%); 
   filter: brightness(130%);
 }
+/*grid project grayscaling, individual lightening*/
 #f2p, #GoT, #r2tc, #amelies, .grid-subH, .grid-header{
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
@@ -333,8 +331,15 @@ img::-moz-selection {
   max-height: 100%;
   opacity: 0.9;
 }
-
-.img-holder#f2p:hover, .img-holder#GoT:hover, .img-holder#r2tc:hover, .img-holder#amelies:hover, .grid-container:hover, .grid-subH:hover, .grid-header:hover{
+/*hover grouping*/
+.img-holder#f2p:hover,
+.img-holder#GoT:hover, 
+.img-holder#r2tc:hover, 
+.img-holder#amelies:hover, 
+.grid-container:hover, 
+.grid-subH:hover, 
+.hideOverflow:hover,
+.grid-header:hover{
   opacity: 1.0 ;
   filter:grayscale(0%) ;
   -webkit-filter:grayscale(0%);
@@ -369,9 +374,7 @@ img::-moz-selection {
   transition: all 0.3s ease-in-out;
   padding:5%;
 }
-.hideOverflow:hover{
-  opacity:1.0;
-}
+
 
 .backgroundLink{
   display:block;
