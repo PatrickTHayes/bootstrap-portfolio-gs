@@ -43,7 +43,7 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3;
+  color: cyan;
 }
 
 a:focus, a:hover {
@@ -179,19 +179,15 @@ a:focus, a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
 .project-section {
   color: white;
-  /*background: url("../img/footballgs.jpg") no-repeat center center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 #map {
@@ -200,14 +196,12 @@ a:focus, a:hover {
 }
 
 @media (min-width: 992px) {
-  .content-section {
+  .project-section {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
+    margin-bottom:200px;
   }
-  #map {
-    height: 350px;
   }
-}
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -220,16 +214,16 @@ a:focus, a:hover {
 }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: cyan;
+  border: 1px solid cyan;
   background-color: transparent;
 }
 
 .btn-default:focus, .btn-default:hover {
   color: black;
-  border: 1px solid #42DCA3;
+  border: 1px solid cyan;
   outline: none;
-  background-color: #42DCA3;
+  background-color: cyan;
 }
 
 ul.banner-social-buttons {
@@ -371,7 +365,7 @@ img::-moz-selection {
 }
 
 .features:hover{
-  background-color:#42DCA3;
+  background-color:cyan;
 }
 
 .modal-content{
