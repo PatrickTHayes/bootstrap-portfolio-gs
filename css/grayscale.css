@@ -279,7 +279,7 @@ img::-moz-selection {
 .grid-container {
   display: grid;
   grid-template-columns: 46% auto;
-  grid-template-rows: 48vh 48vh 48vh 48vh;
+  grid-template-rows: auto 72vh 72vh 72vh;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
   padding: 2px;
@@ -289,6 +289,14 @@ img::-moz-selection {
   text-align: center;
   align-content:center;
   font-size: 30px;
+}
+.grid-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  opacity: 0.5;
+  background:black;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
 }
 .img-holder{
   /*height:48vh;*/
@@ -319,7 +327,7 @@ img::-moz-selection {
   max-height: 100%;
 }
 
-.img-holder#f2p:hover, .img-holder#GoT:hover, .img-holder#r2tc:hover, .img-holder#amelies:hover{
+.img-holder#f2p:hover, .img-holder#GoT:hover, .img-holder#r2tc:hover, .img-holder#amelies:hover, .grid-header:hover{
   opacity: 1.0 ;
   filter:grayscale(0%) ;
   -webkit-filter:grayscale(0%);
