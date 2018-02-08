@@ -452,6 +452,8 @@ section > div > p {
   border-color:cyan;
   border-width:2px;
   text-align: left;
+  max-width: 300px;
+  margin:auto;
 }
 #education{
   position:relative;
