@@ -469,3 +469,6 @@ section > div > p {
   width:100%;
   opacity:.5;
 }
+section {
+  margin:50px 0px;
+}
