@@ -351,7 +351,7 @@ img::-moz-selection {
   background-size:cover;
 }
 #GoT{
-  background: url("../img/GOT-clicky-running.PNG") no-repeat center center scroll;
+  background: url("../img/GOT-clicky-running.PNG") no-repeat  scroll;
   background-size:cover;
 }
 #r2tc{
