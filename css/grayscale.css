@@ -331,7 +331,7 @@ img::-moz-selection {
   max-height: 100%;
   opacity: 0.9;
 }
-/*hover grouping*/
+/*hover grouping remove grayscale && make opaque*/
 .img-holder#f2p:hover,
 .img-holder#GoT:hover, 
 .img-holder#r2tc:hover, 
@@ -344,6 +344,8 @@ img::-moz-selection {
   filter:grayscale(0%) ;
   -webkit-filter:grayscale(0%);
 }
+
+/*set background images by id for projects*/
 #f2p{
   background: url("../img/f2p.png") no-repeat center center scroll;
   background-size:cover;
@@ -389,9 +391,11 @@ img::-moz-selection {
 .modal-content{
   background-color:black;
 }
+/*set position for slideshow*/
 .bg{
   position:relative;
 }
+/*grayscale the slideshow but dont pass down as inheritance*/
 .bg::before{
   position:absolute;
   display:block;
@@ -404,7 +408,7 @@ img::-moz-selection {
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
 }
-
+/*remove grayscale on hover*/
 .bg:hover::before{
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -412,6 +416,7 @@ img::-moz-selection {
   -webkit-filter: grayscale(0%); 
   filter: grayscale(0%);
 }
+/*individual classes that set slideshow backgrounds*/
 .bg1::before{
   background: url("../img/football2.jpg") no-repeat ;
   background-size:cover;
@@ -431,8 +436,36 @@ img::-moz-selection {
 section > div > p {
   background-color:gray;
 }
-
+/*set background gray in case picture is white*/
 .text-on-pictures {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   background-color:black;
+  opacity:.5;
+}
+.text-on-pictures:hover{
+  opacity:1;
+}
+.card-block{
+  background-color:black;
+  border-color:cyan;
+  border-width:2px;
+  text-align: left;
+}
+#education{
+  position:relative;
+
+}
+#education::before {
+  background:url("../img/udayton.jpg") no-repeat center center scroll;
+  background-size:cover;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  position:absolute;
+  display:block;
+  content:"";
+  height:100%;
+  width:100%;
   opacity:.5;
 }
